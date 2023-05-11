@@ -7011,6 +7011,18 @@ kind: secret
 name: enterprise2_security_prefix
 ---
 get:
+  name: app-id
+  path: infra/data/ci/github/updater-app
+kind: secret
+name: updater-app-id
+---
+get:
+  name: app-installation-id
+  path: infra/data/ci/github/updater-app
+kind: secret
+name: updater-app-installation-id
+---
+get:
   name: private-key
   path: infra/data/ci/github/updater-app
 kind: secret
@@ -7047,6 +7059,6 @@ kind: secret
 name: github_token
 ---
 kind: signature
-hmac: 5de983dd067b2e21e9df3072cec26ea58af019d203d04571e8af1444a683d0f6
+hmac: f2b72d67a293207c4d177ffecd9706fdca4ba96e3ccc72b6a36b2c991b8d3163
 
 ...
